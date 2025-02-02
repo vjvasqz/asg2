@@ -1,0 +1,78 @@
+<!-- Veronica Vasquez Hernandez -->
+<!-- vejavasq@gmail.com-->
+
+<!-- Notes to Grader: -->
+<!-- No notes-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>BlockyAnimal: Penguin</title>
+  </head>
+
+  <body onload="main()">
+    <canvas id="webgl" width="400" height="400">
+    Please use a browser that supports "canvas"
+    </canvas>
+
+    <div id="numd">FPS:</div>
+    
+    <!-- Camera Angle & Body Animation -->
+    👉 Press SHIFT + Click to make the penguin fall backwards!<br>
+    🖱️ Click and drag with mouse to rotate the penguin around<br>
+    🎥 Or use the 360 Camera Angle <input type="range" min="-360" max="360" value="20" class="slide" id="angleSlide">
+    <br><p>
+    Penguin Body Animation: 
+    <button type="button" id="animationONBody">ON</button>
+    <button type="button" id="animationOFFBody">OFF</button>
+    <br><br>
+    
+    <!-- Head Animation -->
+    Head Animation: 
+    <button type="button" id="animationONHead">ON</button>
+    <button type="button" id="animationOFFHead">OFF</button>
+    
+    | Head Tilt <input type="range" min="-7" max="7" value="0" class="slide" id="headSlide">
+    <p>
+    <br>
+
+    <!-- left Flap -->
+    L Flap Animation: 
+    <button type="button" id="animationONLFlap">ON</button>
+    <button type="button" id="animationOFFLFlap">OFF</button>
+    
+    | Left Flap <input type="range" min="-15" max="5" value="0" class="slide" id="leftFlap">
+    <p>
+    <br>
+
+    <!-- right Flap -->
+    R Flap Animation: 
+    <button type="button" id="animationONRFlap">ON</button>
+    <button type="button" id="animationOFFRFlap">OFF</button>
+
+    | Right Flap <input type="range" min="-5" max="15" value="0" class="slide" id="rightArm">
+    <p>
+
+    <!-- Hand Flaps -->
+    Left Hand <input type="range" min="-15" max="10" value="0" class="slide" id="leftArm">
+    Right Hand <input type="range" min="-10" max="15" value="0" class="slide" id="rightFlap">
+    <p>
+
+    <!-- Legs -->
+    Left Leg <input type="range" min="-10" max="10" value="0" class="slide" id="leftLeg">
+    Right Leg <input type="range" min="-10" max="10" value="0" class="slide" id="rightLeg">
+    <p>
+
+    <!-- Files in Code -->
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <script src="lib/cuon-matrix.js"></script>
+
+    <script src="Cube.js"></script>
+    <script src="BlockyAnimal.js"></script>
+    <script src="Triangle.js"></script>
+    
+  </body>
+</html>
